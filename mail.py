@@ -23,7 +23,7 @@ imap_server.select("inbox")
 # Recherche d'e-mails avec un objet spécifique
 search_criteria = r'(X-GM-RAW "subject:\"Enregistrement du \"") UNSEEN'
 status, email_ids = imap_server.search(None, search_criteria)
-print('STATUS: ', status)
+# print('STATUS: ', status)
 
 # Vérifier si la recherche a abouti
 if status == "OK":
@@ -33,7 +33,7 @@ if status == "OK":
         imap_server.store(email_id, '+FLAGS', '(\Seen)')
         # Maintenant, vous pouvez extraire et traiter les e-mails correspondants
         status, email_data = imap_server.fetch(email_id, '(RFC822)')
-        print('STATUS: ', status)
+        # print('STATUS: ', status)
         if status == "OK":
             email_text = email_data[0][1]
             msg = message_from_string(email_text.decode('utf-8'))

@@ -1,0 +1,1 @@
+# Fichier de configuration pour la connexion aux webservices de iTop et pour la création du ticket

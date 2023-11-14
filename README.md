@@ -1,5 +1,6 @@
 English README
-# Mail-to-Ticket
+
+# iTOP-Mail-to-Ticket
 Mail-to-Ticket is a Python application designed to monitor a mail inbox, extract relevant information from incoming emails, and create tickets in the iTop ticketing system based on specific criteria.
 
 ## Features
